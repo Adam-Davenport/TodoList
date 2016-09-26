@@ -17,7 +17,11 @@ $("input[type='text'").keypress(function(event) {
 		//retrieve text from the input
 		var inputText = $(this).val();
 		//Create a new li for the ul
-		$('ul').append("<li> <span>X</span> " + inputText + "</li>");
+		$('ul').append("<li> <span><i class='fa fa-trash-o'></i></span> " + inputText + "</li>");
 		$(this).val("");
 	}	
 });
+
+$(".fa-plus").click(function () {
+	$("input[type='text'").fadeToggle();
+})
